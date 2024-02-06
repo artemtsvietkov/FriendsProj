@@ -1,4 +1,4 @@
-# BestFriendsProj.PY: This app can add/remove/change names in a lsit
+# BestFriendsProj.PY: This app can add/remove names in a lsit
 __author__  = "Artem Tsvietkov"
 __version__ = "1.0.0"
 __email__   = "artem.tsvietkov@elev.ga.ntig.se"
