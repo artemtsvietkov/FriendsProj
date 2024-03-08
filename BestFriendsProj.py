@@ -11,17 +11,20 @@ os.system('cls')
 # Show names in list
 names = []
 def show_list(friend_list):
-    print(bcolors.BLUE + "ꑭ"*11)
-    print(bcolors.YELLOW + "Frineds in your list: ")
-    for name in friend_list:
-        print(bcolors.YELLOW + name)
+    print(bcolors.BLUE + "ꑭ"*11 + bcolors.DEFAULT)
+    if not names:
+        print("You have no friends in your list")
+    else:
+        print(bcolors.YELLOW + "Frineds in your list: ")    
+        for name in friend_list:
+            print(bcolors.YELLOW + name)
 
 
 # Add name to list
 def add_name(friend_list):
     friend = input("Write in a name you want to add to your list: ")
     friend_list.append(friend)
-    print(bcolors.BLUE + {friend} + bcolors.GREEN + "has been successfully added to your list.")
+    print(f"{bcolors.BLUE}{friend}{bcolors.DEFAULT} {bcolors.GREEN}has been successfully added to your list.{bcolors.DEFAULT}")
 
 # Remove name from list
 def remove_name(friend_list):
